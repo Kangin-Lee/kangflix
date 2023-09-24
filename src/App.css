@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+
+.header{
+  width: 100%;
+  height: 770.59px;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/9d383838-0e80-4032-b1e8-47af75f06a20/KR-ko-20230918-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+
+  background-size:cover;
+  background-position: center;
+}
+
+.header::before{
+  content: '';
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.850), rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.900));
+  position: absolute;
+  top: 0px;
+  height: 770.59px;
+  width: 100%;
+}
+
+.logo{
+  position: relative;
+  top: 20px;
+}
+
+.header-txt{
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  top: 230px;
+  font-weight: bold;
+}
+
+.header-txt h1{
+  font-size: 3.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.header-txt p{
+  margin-top: 270px;
+}
+
+/* 메인 페이지--------------------------------------------------------------- */
+.main-page{
+  background-color: black;
+}
+
+.main-page h1{
+  text-align: center;
+
+}
+.main-loading{
+  height: 100vh;
+}
+
+.main-page select{
+  padding: 10px 10px;
+  background-color: #dc1a28;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.rating-movie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin: 50px 0 20px 0;
+}
+
+.rating-movie p{
+  color:white;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* 무비 컴포넌트------------------------------------------------- */
+.movie-card{
+  background-color: #202124;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 260px;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover{
+  transform: translateY(-10px);
+}
+
+.movie-card img{
+  border-radius: 10px;
+  justify-self: center;
+}
+
+.movie-card h2{
+  white-space: nowrap; /* 텍스트 줄 바꿈 방지 */
+  overflow: hidden;    /* 넘치는 텍스트 숨김 처리 */
+  text-overflow: ellipsis; /* 넘치는 텍스트를 ...로 축약 */
+  font-size: 1.2em;
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.rating-star{
+  color: #dc1a28;
+  text-align: center;
+  font-weight: bold;
+}
