@@ -117,3 +117,60 @@
   text-align: center;
   font-weight: bold;
 }
+
+/* 디테일 부분----------------------------------------------------------- */
+.detail-area{
+  background-color: black;
+  height: 100vh;
+}
+.detail-data-true{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.detail-data-false{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.detail-show-items{
+  display: flex;
+  justify-content: center;
+}
+
+.detail-movie-description{
+  background-color: #202124;
+  color: white;
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 20px;
+}
+
+.detail-title-long{
+  font-size: 4em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.detail-movie-rating span{
+  margin-right: 15px;
+}
+
+.detail-movie-rating{
+  margin-bottom: 10px;
+}
+.detail-description-full{
+  margin-top: 10px;
+  background-color: #3a3b41;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* 푸터--------------------------------------------------------------------- */
+.footer-area{
+  border-top: 10px solid #202124;
+  height: 230px;
+  margin-top: 50px;
+}
+

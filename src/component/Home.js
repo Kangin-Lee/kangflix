@@ -3,6 +3,7 @@ import Movie from "./Movie";
 import Header from "./Header";
 import { Container } from "react-bootstrap";
 import Spinner from "react-bootstrap/Spinner";
+import Footer from "./Footer";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -65,6 +66,7 @@ const Home = () => {
           </div>
         )}
       </Container>
+      <Footer />
     </div>
   );
 };
