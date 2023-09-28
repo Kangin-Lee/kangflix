@@ -147,6 +147,7 @@
   border-radius: 10px;
   margin-left: 20px;
   padding: 20px;
+  height: max-content;
 }
 
 .detail-title-long{
@@ -162,10 +163,14 @@
   margin-bottom: 10px;
 }
 .detail-description-full{
-  margin-top: 10px;
+  margin: 10px 0;
   background-color: #3a3b41;
   padding: 20px;
   border-radius: 10px;
+}
+.detail-logo{
+  position: relative;
+  bottom: 400px;
 }
 /* 푸터--------------------------------------------------------------------- */
 .footer-area{

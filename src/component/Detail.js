@@ -7,6 +7,7 @@ import {
   faHeart,
   faStar,
   faClapperboard,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Detail = () => {
@@ -40,10 +41,21 @@ const Detail = () => {
           className="detail-data-false"
           style={{ backgroundImage: `url("${movie.background_image}")` }}
         >
-          <Container>
+          <Container
+            style={{
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <div className="detail-show-items">
               <div>
-                <img width={400} src={movie.large_cover_image} />
+                <img
+                  style={{ borderRadius: "10px" }}
+                  width={400}
+                  src={movie.large_cover_image}
+                />
               </div>
 
               <div className="detail-movie-description">
@@ -65,6 +77,9 @@ const Detail = () => {
                   </span>
                   <span>
                     <FontAwesomeIcon icon={faClapperboard} /> {movie.runtime}min
+                  </span>
+                  <span>
+                    <FontAwesomeIcon icon={faDownload} /> {movie.download_count}
                   </span>
                 </div>
                 <div>
